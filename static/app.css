@@ -1,0 +1,35 @@
+.board{
+    text-align:center;
+    border:1px solid black;
+    font-size:50px;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+td{
+    border:1px solid black;
+    height:80px;
+    width:80px;
+}
+
+h1{
+    text-align:center;
+    background-color:rgba(0, 150, 0, 20%)
+}
+
+button{
+    padding: 10px 20px;
+    font-size:20px;
+    text-align:center;
+    background-color:green;
+    color:white;
+}
+
+#startDiv{
+    text-align:center;
+}
+
+#guess-container{
+    text-align:center;
+}

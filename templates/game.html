@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} Boggle Game {% endblock %}
+
+{% block body %}
+<h1>Boggle!!</h1>
+<table class='board'>
+    {% for row in session['board'] %}
+    <tr>
+        {% for el in row %}
+        <td>{{el}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+<container id='guess-container'>
+    <form id='guess-form'>
+        <input id='guess-input' name='guess' type='text' placeholder='Take a guess!'>
+        <button id='guess-button'>Guess!</button>
+    </form>
+</container>
+
+<script src="http://unpkg.com/jquery"></script>
+<script src="http://unpkg.com/axios/dist/axios.js"></script>
+<script src='/static/app.js'></script>
+{% endblock %}
