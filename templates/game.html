@@ -21,7 +21,15 @@
     </form>
 </container>
 
-<script src="http://unpkg.com/jquery"></script>
+<div id='score-div'></div>
+<div id='confirm-div'></div>
+<div id="attempts-div"></div>
+
+<form action="/start-game">
+    <button>Restart</button>
+</form>
+<div id="timer-div"></div>
+
 <script src="http://unpkg.com/axios/dist/axios.js"></script>
 <script src='/static/app.js'></script>
 {% endblock %}
